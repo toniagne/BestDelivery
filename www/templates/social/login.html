@@ -1,6 +1,6 @@
 <div class="modal">
   <ion-header-bar>
-    <h1 class="title">Login</h1>
+    <h1 class="title">Cadastre-se</h1>
     <div class="buttons">
       <button class="button button-clear" ng-click="closeLogin()"><i class="icon ion-close-circled"></i></button>
     </div>
@@ -9,20 +9,21 @@
     <form ng-submit="doLogin()" class="gem-form">
       <div class="list">
         <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username" placeholder="Username">
+          <span class="input-label">Nome    </span><br>
+          <input type="text" ng-model="loginData.nome" placeholder="Nome Completo">
         </label>
         <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password" placeholder="Password">
+          <span class="input-label">Fone/Whats </span><br>
+          <input type="text" ng-model="loginData.password" placeholder="Telefone / Whatsapp">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">End</span><br>
+          <input type="text" ng-model="loginData.endereco" placeholder="Endereço">
         </label>
         <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+          <button class="button button-block button-positive" type="submit">Cadastrar-se</button>
         </label>
-        <div class="text-center padding">
-          <div class="padding">Not yet registered?</div>
-          <button class="button button-positive" type="submit">Sign up for free</button>
-        </div>
+        
       </div>
     </form>
   </ion-content>
