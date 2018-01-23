@@ -12,11 +12,7 @@ angular.module('starter.controllers', [])
     $scope.modal = modal;
   });
 
-   $ionicModal.fromTemplateUrl('templates/social/detalhesProduto.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal2 = modal;
-  });
+ 
 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
@@ -28,9 +24,7 @@ angular.module('starter.controllers', [])
     $scope.modal.show();
   };
 
-   $scope.verproduto = function() {
-     $scope.modal2.show();
-  };
+ 
 
 
   // Perform the login action when the user submits the login form

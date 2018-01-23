@@ -1,0 +1,87 @@
+<!-- Title for header bar (refer to www/index.html) -->
+<ion-view title="CHECK-IN PEDIDOS">
+  <!-- left button -->
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <!-- right button -->
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-plus-round"></button>
+  </ion-nav-buttons>
+  
+  <!-- ======================
+  MAIN SECTION CONTENT - timeline
+  ====================== -->
+  <ion-content class="has-header gem-ion-content">
+      <!-- Subheader - using ionic's subheader. '.gem-position-relative' is to shift the child icon to the right -->
+      <div class="bar bar-header bar-positive gem-position-relative">
+        <h2 class="title text-left">
+          <i class="ion-checkmark-circled pos-absolute-right"></i> Meu Pedido (R$ 18,00)
+        </h2>
+      </div>
+      <!-- End subheader -->
+
+      <!-- Gemionic Timeline -->
+      <ul class="timeline">
+        
+
+        <!-- timeline item -->
+        <li>
+          <!-- thumb - absolutely positioned left -->
+          <img src="img/gemionic/yellow-rect.jpg" alt="" class="timeline-thumb">
+          <!-- Text details -->
+          <div class="timeline-item">
+            <h5 class="bold">X-SALADA</h5>
+            <p>Bife + molho especial + saladas + pão de xis</p>
+            <div class="timeline-stats">
+              <i class="ion-heart"></i> R$ 13,00
+              <span class="pos-absolute-right"><i class="ion-android-clock"></i> RETIRAR DO PEDIDO</span>
+              
+            </div>
+            
+          </div>
+          <!-- End Text Details -->
+        </li>
+        <!-- End timeline item -->
+
+        <!-- timeline item -->
+       
+      </ul>
+      <!-- End gemionic timeline -->
+
+      <!-- Title separator -->
+      <div class="separator-title">ADICIONAIS</div>
+      <!-- End Title separator -->
+
+
+      <!-- Gemionic Timeline -->
+      <ul class="timeline">
+      
+         <li>
+          <!-- thumb - absolutely positioned left -->
+          <div class="timeline-thumb timeline-thumb gem-success no-image">  <!-- use '.no-image' if you want to use an icon instead -->
+            <i class="ion-heart"></i>
+          </div>
+          <!-- Text details -->
+          <div class="timeline-item">
+            <h5 class="bold">MOLHO CHADDAR</h5>
+            <p>1 DOSE DE MOLHO CHEDDAR</p>
+            <div class="timeline-stats">
+              <i class="ion-heart"></i> R$ 3,00
+              <span class="pos-absolute-right"><i class="ion-android-clock"></i> RETIRAR DO PEDIDO</span>
+            </div>
+          </div>
+          <!-- End Text Details -->
+        </li>
+      </ul>
+
+      <button class="button button-block button-balanced"  ng-click="login()">
+  Finalizar Pedido
+</button>
+<center>ou</center>
+      <button class="button button-block button-assertive">
+  Limpar Pedido
+</button>
+  </ion-content>
+</ion-view>

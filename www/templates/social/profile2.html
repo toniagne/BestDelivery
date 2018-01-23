@@ -1,4 +1,13 @@
-<!-- Title for header bar (refer to www/index.html) -->
+<style>
+ .col {
+  font-size: 0.02;
+  color: #ffffff;
+  text-align: center;
+ }
+}
+</style>   
+
+    <!-- Title for header bar (refer to www/index.html) -->
 <ion-view title="Pitt Bull Lanches">
   <!-- ======================
   LEFT SIDE BUTTON
@@ -34,6 +43,13 @@
       </div>
       <!-- Background Image -->
       <img src="img/gemionic/post-img.jpg" alt="" class="fluid-image profile-background-image" style="vertical-align:middle;">
+
+          <div class="row">
+        <div class="col"><a class="button button-icon icon ion-ios-home"></a> <br>Enterga (30 min) </div>
+        <div class="col"><a class="button button-icon icon ion-cash"></a> <br>Dinheiro</div>
+        <div class="col"><a class="button button-icon icon ion-calculator"></a> <br>Máq. Cartão</div> 
+      </div>
+       
     </div>
     <!-- ======================
     END GEMIONIC PROFILE SECTION
@@ -55,35 +71,43 @@
     <div class="profile-feed">
       <div class="row">
         <div class="col">
-            <div class="profile-post" ng-click="verproduto(1)">
-              <img src="img/gemionic/yellow-rect.jpg" alt="">
-              <h4 class="bold">X-Salada</h4>
-              <p>Bife + molho especial + saladas + pão de xis</p>
-              <span class="profile-post-stat"><i class="icon ion-heart"></i> 23 </span>
-              <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 13,00</span>
+            <div class="profile-post">
+              <a href="#/app/produtos/:1">
+                  <img src="img/gemionic/yellow-rect.jpg" alt=""> 
+                  <h4 class="bold">X-Salada</h4>
+                  <p>Bife + molho especial + saladas + pão de xis</p>
+                  <span class="profile-post-stat"><i class="icon ion-heart"></i> 23 </span>
+                  <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 13,00</span>
+             </a>     
             </div>
-            <div class="profile-post" ng-click="verproduto(2)">
+            <div class="profile-post">
+                <a href="#/produto/:2">
               <img src="img/gemionic/orange.jpg" alt="">
                <h4 class="bold">Porção de Fritas</h4>
               <p>Porção média de fritas, para até 2 pessoas</p>
               <span class="profile-post-stat"><i class="icon ion-heart"></i> 2 </span>
               <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 11,00</span>
+            </a>
             </div>
           </div>
         <div class="col">
-          <div class="profile-post" ng-click="verproduto(3)">
+          <div class="profile-post">
+              <a href="#/produto/:3">
               <img src="img/gemionic/tall-blue.jpg" alt="">
               <h4 class="bold">X-Calabresa</h4>
               <p>Bife + molho especial + calabresa + pão de xis</p>
               <span class="profile-post-stat"><i class="icon ion-heart"></i> 10 </span>
               <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 15,00</span>
+            </a>
             </div>
-            <div class="profile-post"   ng-click="verproduto(4)">
+            <div class="profile-post">
+                <a href="#/produto/:4">
               <img src="img/gemionic/post-img-rect.jpg" alt="">
               <h4 class="bold">Cachorro quente</h4>
               <p>Cachorro quente com 1 salsicha + molho especial</p>
               <span class="profile-post-stat"><i class="icon ion-heart"></i> 4 </span>
               <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 8,00</span>
+            </a>
             </div>
         </div>
       </div>
