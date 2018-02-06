@@ -26,12 +26,12 @@
     <div class="gem-profile-media">
       <div class="gem-profile-details profile2">
         <!-- Profile Name -->
-        <h3 class="gem-white">Pitt Bull Lanches</h3>
+        <h3 class="gem-white">{{data.nome}}</h3>
         <!-- Profile Description text -->
-        <p>Aberto de segunda á domingo das 12hs até 1hs. Tele-entrega</p>
+        <p>{{data.end}}</p>
         <!-- text stats -->
         <div class="gem-center">
-          <i class="icon ion-android-call"></i> 51 3722-7000 | <i class="icon ion-social-whatsapp"></i> 51 99689-5723
+          <i class="icon ion-android-call"></i> {{data.fone}}
         </div>
       </div>
       <!-- Background Image -->
@@ -64,49 +64,19 @@
     <div class="profile-feed">
       <div class="row">
         <div class="col">
-            <div class="profile-post">
-              <a href="#/app/produtos/:1"> 
-                  <img src="img/gemionic/yellow-rect.jpg" alt="">  
+
+            <div class="profile-post" ng-repeat="produto in produtos">
+              <a href="#/app/produtos/{{produto.id}}"> 
+                  <img src="{{produto.logo}}" alt="">  
               </a>
-                  <h4 class="bold">X-Salada</h4>
-                  <p>Bife + molho especial + saladas + pão de xis</p>
-                  <span class="profile-post-stat"><i class="icon ion-heart"></i> 23 </span>
-                  <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 13,00</span>
+                  <h4 class="bold">{{produto.nome}}</h4>
+                  <p ng-bind-html="produto.desc"></p> 
+                  <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ {{produto.valor}}</span>
                
             </div>
-            <div class="profile-post">
-                <a href="#/app/produtos/:2">
-              <img src="img/gemionic/orange.jpg" alt="">
-              </a>
-               <h4 class="bold">Porção de Fritas</h4>
-              <p>Porção média de fritas, para até 2 pessoas</p>
-              <span class="profile-post-stat"><i class="icon ion-heart"></i> 2 </span>
-              <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 11,00</span>
-            
-            </div>
+              
           </div>
-        <div class="col">
-          <div class="profile-post">
-              <a href="#/app/produtos/:3">
-              <img src="img/gemionic/tall-blue.jpg" alt="">
-              </a>
-              <h4 class="bold">X-Calabresa</h4>
-              <p>Bife + molho especial + calabresa + pão de xis</p>
-              <span class="profile-post-stat"><i class="icon ion-heart"></i> 10 </span>
-              <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 15,00</span>
-            
-            </div>
-            <div class="profile-post">
-                <a href="#/app/produtos/:4">
-              <img src="img/gemionic/post-img-rect.jpg" alt="">
-              </a>
-              <h4 class="bold">Cachorro quente</h4>
-              <p>Cachorro quente com 1 salsicha + molho especial</p>
-              <span class="profile-post-stat"><i class="icon ion-heart"></i> 4 </span>
-              <span class="profile-post-stat"><i class="icon ion-ios7-clock"></i> R$ 8,00</span>
-            
-            </div>
-        </div>
+     
       </div>
     </div>
 

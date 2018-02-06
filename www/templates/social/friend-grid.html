@@ -35,82 +35,23 @@
     <!-- End Search Box -->
 
     <!-- standard small title heading -->
-    <div class="uppercase label-title">32 empresas</div>
+    <div class="uppercase label-title">3 empresas</div>
     <!-- end standard small title heading -->
 
     <!-- ======================
     GEMIONIC FRIEND LIST MODULE
     ====================== -->
-    <div class="gem-friend-grid clearfix">
-      
+    <div class="gem-friend-grid clearfix"> 
       <!-- Friend List Item  -->
-      <div class="friend-item">  
-        <a href="#/app/profiletwo" >
+      <div class="friend-item" ng-repeat="edicoes in itens">  
+        <a href="#/app/profiletwo/{{edicoes.id}}">
             <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/pitbull.png" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-default"></i> Offline</div>
+            <img src="{{edicoes.logo}}" alt="" class="gem-friend-list-profile-pic"> 
             <!-- Friend name -->
-             
+             <p class="friend-name">{{edicoes.nome}}</p>
         </a>
       </div>
-      <!-- End Friend List Item  -->
-
-      <!-- Friend List Item  -->
-      <div class="friend-item">  
-            <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/nofoto.jpg" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-success"></i> Online</div>
-            <!-- Friend name -->
-            <p class="friend-name">Dog do Onibus</p>
-      </div>
-      <!-- End Friend List Item  -->
-
-      <!-- Friend List Item  -->
-      <div class="friend-item">  
-            <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/nofoto.jpg" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-success"></i> Online</div>
-            <!-- Friend name -->
-            <p class="friend-name">Doce de Leite</p>
-      </div>
-      <!-- End Friend List Item  -->
-
-      <!-- Friend List Item  -->
-      <div class="friend-item">  
-            <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/nofoto.jpg" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-success"></i> Online</div>
-            <!-- Friend name -->
-            <p class="friend-name">Caskinha</p>
-      </div>
-      <!-- End Friend List Item  -->
-
-      <!-- Friend List Item  -->
-      <div class="friend-item">  
-            <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/nofoto.jpg" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-success"></i> Online</div>
-            <!-- Friend name -->
-            <p class="friend-name">SubWay</p>
-      </div>
-      <!-- End Friend List Item  -->
-
-      <!-- Friend List Item  -->
-      <div class="friend-item">  
-            <!-- Round Image here. Fluid width and Colored ring stating status -->
-            <img src="img/gemionic/nofoto.jpg" alt="" class="gem-friend-list-profile-pic">
-            <!-- Online Status Icon -->
-            <div class="online-status"><i class="icon ion-record gem-color-success"></i> Online</div>
-            <!-- Friend name -->
-            <p class="friend-name">Dog do Bala</p>
-      </div>
-    <!-- End Friend List Item  -->
-
+      <!-- End Friend List Item  --> 
     </div>
 
   </ion-content>

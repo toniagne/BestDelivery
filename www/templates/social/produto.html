@@ -1,4 +1,4 @@
-<ion-view title="PitBull (R$ 13,00)">
+<ion-view title="{{produtos.nome}} (R$ {{produtos.valor}})">
   <!-- ======================
   LEFT SIDE BUTTON
   ====================== -->
@@ -20,15 +20,10 @@
     <!-- Media section (Picture, Video, Map, etc) -->
     <div class="news-media">
       <!-- Image 100% width -->
-      <img src="img/gemionic/yellow-rect.jpg" alt="" class="fluid-image"> 
+      <img src="{{produtos.logo}}" alt="" class="fluid-image"> 
 
       <!-- Stats (Absolutely positioned right) -->
-      <div class="media-social-stats stat-label"> 
-        <span class="news-comment-summary">
-          <i class="icon ion-heart"></i> 2 
-          <i class="icon ion-chatbubble"></i> 3
-        </span>
-      </div>
+       
 
     </div><!-- End Media section --> 
 
@@ -36,8 +31,8 @@
     <div class="news-item">
   
  
-        <h4>X-SALADA </h4>
-        Bife + molho especial + saladas + pão de xis
+        <h4>{{produtos.nome}} </h4>
+        <p ng-bind-html="produtos.desc"></p>
 
 <br><Br>
 <H3>ADICIONAIS</H3>

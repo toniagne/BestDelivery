@@ -52,7 +52,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       url: "/fgrid",
       views: {
         'menuContent' :{
-          templateUrl: "templates/social/friend-grid.html"
+          templateUrl: "templates/social/friend-grid.html",
+          controller: 'DashCtrl'
         }
       }
     })
@@ -112,10 +113,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
     .state('app.profiletwo', {
-      url: "/profiletwo",
+      url: "/profiletwo/:prodId",
       views: {
         'menuContent' :{
           templateUrl: "templates/social/profile2.html",
+          controller: 'ClienteDetalhe'
         }
       }
     })
@@ -161,6 +163,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/social/produto.html",
+          controller: 'ProdutoDetalhe'
         }
       }
     })
